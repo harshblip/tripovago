@@ -1,0 +1,20 @@
+[
+    {
+        "id": 0,
+        "title": "Real Estate Packages",
+        "subtitle": "Showcasing properties, connecting buyers—unlock real estate deals with exclusive travel perks",
+        "image":
+    },
+    {
+        "id": 1,
+        "title": "Marine",
+        "subtitle": "Smooth voyages start with us—exclusive travel solutions for seafarers, tailored for ease and efficiency"
+    },
+    {
+        "id": 2,
+        "title1": "Flights ✈",
+        "title2": "Visa",
+        "title3": "Hotels 🏨",
+        "subtitle": "Smooth voyages start with us—exclusive travel solutions for seafarers, tailored for ease and efficiency"
+    }
+]

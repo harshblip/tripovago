@@ -3,18 +3,113 @@
         "id": 0,
         "title": "Real Estate Packages",
         "subtitle": "Showcasing properties, connecting buyers—unlock real estate deals with exclusive travel perks",
-        "image":
+        "type": "carousel"
     },
     {
         "id": 1,
         "title": "Marine",
-        "subtitle": "Smooth voyages start with us—exclusive travel solutions for seafarers, tailored for ease and efficiency"
+        "subtitle": "Smooth voyages start with us—exclusive travel solutions for seafarers, tailored for ease and efficiency",
+        "type": "carousel"
     },
     {
         "id": 2,
         "title1": "Flights ✈",
         "title2": "Visa",
         "title3": "Hotels 🏨",
-        "subtitle": "Smooth voyages start with us—exclusive travel solutions for seafarers, tailored for ease and efficiency"
+        "subtitle": "Smooth voyages start with us—exclusive travel solutions for seafarers, tailored for ease and efficiency",
+        "type": "carousel"
+    },
+    {
+        "id": 3,
+        "title": "Search your favourite places",
+        "subtitle": "Embark on journey to discover your dream destination, where adventure meets joy",
+        "type": "howto"
+    },
+    {
+        "id": 4,
+        "title": "Browse different packages",
+        "subtitle": "Embark on journey to discover your dream destination, where adventure meets joy",
+        "type": "howto"
+    },
+    {
+        "id": 5,
+        "title": "Explore package details",
+        "subtitle": "Embark on journey to discover your dream destination, where adventure meets joy",
+        "type": "howto"
+    },
+    {
+        "id": 6,
+        "title": "Perfect travel package for seaman",
+        "subtitle": "Embark on journey to discover your dream destination, where adventure meets joy",
+        "type": "howto"
+    },
+    {
+        "id": 7,
+        "title": "MiddleEast Package",
+        "subtitle": "Dubai / Saudi Arabia / Qatar",
+        "rating": 4.6,
+        "price": "20,000",
+        "type": "tourist packages"
+    },
+    {
+        "id": 8,
+        "title": "SouthEast Asia Package",
+        "subtitle": "Thailand / Vietnam / Bali / Singapore / Malaysia",
+        "rating": 4.6,
+        "price": "15,000",
+        "type": "tourist packages"
+    },
+    {
+        "id": 9,
+        "title": "India Tourist Package",
+        "subtitle": "Jammu&Kashmir / Rajasthan / Goa / Kerala",
+        "rating": 4.6,
+        "price": "12,000",
+        "type": "tourist packages"
+    },
+    {
+        "id": 10,
+        "name": "Amit Raghav",
+        "comment": "I had such a great experience with this travel package! Everything was super organized, the hotels were really nice, and the whole trip felt so smooth. I’m already excited to plan my next vacation with them!",
+        "tourPackage": "10 days China Tourism",
+        "type": "reviews"
+    },
+    {
+        "id": 11,
+        "name": "Abhijeet Sharma",
+        "comment": "I had such a great experience with this travel package! Everything was super organized, the hotels were really nice, and the whole trip felt so smooth. I’m already excited to plan my next vacation with them!",
+        "tourPackage": "12 days MiddleEast Tourism",
+        "type": "reviews"
+    },
+    {
+        "id": 12,
+        "name": "Abhishek Kumar",
+        "comment": "I had such a great experience with this travel package! Everything was super organized, the hotels were really nice, and the whole trip felt so smooth. I’m already excited to plan my next vacation with them!",
+        "tourPackage": "4 days India Tourism",
+        "type": "reviews"
+    },
+    {
+        "id": 13,
+        "title1": "Exclusive Marine",
+        "title2": "&",
+        "title3": "Corporate fares",
+        "type": "marine"
+    },
+    {
+        "id": 14,
+        "title1": "24/7 Expert",
+        "title2": "Support",
+        "type": "marine"
+    },
+    {
+        "id": 15,
+        "title1": "Global Reach",
+        "type": "marine"
+    },
+    {
+        "id": 16,
+        "title1": "Emergency local",
+        "title2": "Assistance",
+        "type": "marine"    
     }
 ]

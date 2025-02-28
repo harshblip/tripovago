@@ -10,8 +10,6 @@ import {
     Carousel,
     CarouselContent,
     CarouselItem,
-    CarouselNext,
-    CarouselPrevious,
 } from "@/components/ui/carousel"
 
 const lexend = Lexend({
@@ -25,10 +23,10 @@ export function CarouselPlugin() {
     )
 
     return (
-        <div className="mt-[0rem]">
+        <div className="mt-[2rem]">
             <Carousel
                 plugins={[plugin.current]}
-                className="max-w-[60rem] mt-[18rem]"
+                className="max-w-[60rem] mt-[0rem] mr-4 sm:mr-0"
                 onMouseEnter={plugin.current.stop}
                 onMouseLeave={plugin.current.reset}
             >

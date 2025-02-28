@@ -13,27 +13,27 @@ const lexend = Lexend({
 export default function Navbar() {
     return (
         <>
-            <div className={`${kavoon.className} flex justify-around space-x-2 text-[#397346]`}>
-                <div>
+            <div className={`${kavoon.className} w-[100%] flex justify-around text-[#397346]`}>
+                <div className="flex space-x-2 -ml-32">
                     <p className=""> Trip </p>
-                    <img src='./images/globe.png' className="w-6" />
+                    <img src='./icons/globe.png' className="w-6" />
                     <p> vita </p>
                 </div>
-                <div className={`${lexend.className} text-[#939393] text-sm flex space-x-4`}>
-                    <button>
+                <div className={`${lexend.className} text-[#939393] text-sm flex space-x-16`}>
+                    <button className="hover:bg-slate-400 transition-all hover:text-white hover:p-2  hover:rounded-md">
                         Home
                     </button>
-                    <button>
+                    <button className="hover:bg-slate-400 transition-all hover:text-white hover:p-2  hover:rounded-md">
                         Tour
                     </button>
-                    <button>
+                    <button className="hover:bg-slate-400 transition-all hover:text-white hover:p-2  hover:rounded-md">
                         Marine
                     </button>
-                    <button>
+                    <button className="hover:bg-slate-400 transition-all hover:text-white hover:p-2  hover:rounded-md">
                         About
                     </button>
                 </div>
-                <div className="text-[#939393] text-sm">
+                <div className="text-[#939393] text-sm -mr-32">
                     <p> Bon Voyage! ⛵🌊  </p>
                 </div>
             </div>

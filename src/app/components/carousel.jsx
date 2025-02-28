@@ -2,7 +2,7 @@
 
 import * as React from "react"
 import Autoplay from "embla-carousel-autoplay"
-import data from '../../../data.json'
+import data from '../../data.json'
 import { Lexend } from "next/font/google"
 
 import { Card, CardContent } from "@/components/ui/card"
@@ -25,10 +25,10 @@ export function CarouselPlugin() {
     )
 
     return (
-        <div className="mt-[42rem]">
+        <div className="mt-[0rem]">
             <Carousel
                 plugins={[plugin.current]}
-                className="max-w-6xl mt-6"
+                className="max-w-[60rem] mt-[18rem]"
                 onMouseEnter={plugin.current.stop}
                 onMouseLeave={plugin.current.reset}
             >
@@ -36,46 +36,31 @@ export function CarouselPlugin() {
                     {
                         data.map((x, i) => {
                             return (
-                                <div key={i}>
-                                    <CarouselItem className={`${lexend.className}`}>
-                                        <div className="flex items-center justify-center">
-                                            <Card className="w-[48rem] h-[24rem] bg-[url('/ship.webp')]">
-                                                <CardContent className="text-white flex flex-col justify-end h-full p-4">
-                                                    <div>
-                                                        <h2 className="font-medium"> {x.title} </h2>
-                                                        <p className="font-light"> {x.subtitle}  </p>
-                                                    </div>
-                                                </CardContent>
-                                            </Card>
-                                        </div>
-                                    </CarouselItem>
-                                </div>
+                                x.type === "carousel" ?
+                                    <div key={i}>
+                                        <CarouselItem className={`${lexend.className}`}>
+                                            <div className="flex items-center justify-center">
+                                                <Card className={`w-[60rem] h-[24rem] ${x.id === 2 ? `bg-no-repeat bg-[length:100%]` : ``} `} style={{ backgroundImage: `url(${x.bg})` }}>
+                                                    {
+                                                        x.id === 2 ? <CardContent className="text-white flex flex-col h-full p-6">
+                                                            <div>
+                                                                <h2 className="font-medium text-4xl leading-[3.5rem]"> {x.title1} <br/> {x.title2} <br /> {x.title3} </h2>
+                                                                <p className="font-light mt-4"> {x.subtitle}  </p>
+                                                            </div>
+                                                        </CardContent> : <CardContent className="text-white flex flex-col justify-end h-full p-6">
+                                                            <div>
+                                                                <h2 className="mb-1 font-medium text-2xl"> {x.title} </h2>
+                                                                <p className="font-light text-sm"> {x.subtitle}  </p>
+                                                            </div>
+                                                        </CardContent>
+                                                    }
+                                                </Card>
+                                            </div>
+                                        </CarouselItem>
+                                    </div> : ''
                             )
                         })
                     }
-                </CarouselContent>
-            </Carousel>
-            <Carousel
-                plugins={[plugin.current]}
-                className="max-w-6xl mt-6"
-                onMouseEnter={plugin.current.stop}
-                onMouseLeave={plugin.current.reset}
-            >
-                <CarouselContent
-                >
-
-
-                    {Array.from({ length: 5 }).map((_, index) => (
-                        <CarouselItem key={index} className="p-1 ">
-                            <div className="flex items-center justify-center">
-                                <Card className="w-[52rem] h-[24rem]">
-                                    <CardContent className="flex items-center justify-center p-6">
-                                        <span className="text-4xl font-semibold">{index + 1}</span>
-                                    </CardContent>
-                                </Card>
-                            </div>
-                        </CarouselItem>
-                    ))}
                 </CarouselContent>
             </Carousel>
         </div>

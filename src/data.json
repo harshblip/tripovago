@@ -3,23 +3,23 @@
         "id": 0,
         "title": "Real Estate Packages",
         "subtitle": "Showcasing properties, connecting buyers—unlock real estate deals with exclusive travel perks",
-        "bg":"./newyork.webp",
+        "bg":"./images/newyork.webp",
         "type": "carousel"
     },
     {
         "id": 1,
         "title": "Marine",
         "subtitle": "Smooth voyages start with us—exclusive travel solutions for seafarers, tailored for ease and efficiency",
-        "bg":"./ship.webp",
+        "bg":"./images/ship.webp",
         "type": "carousel"
     },
     {
         "id": 2,
         "title1": "Flights ✈",
-        "title2": "Visa",
+        "title2": "Visa 📑",
         "title3": "Hotels 🏨",
         "subtitle": "Smooth voyages start with us—exclusive travel solutions for seafarers, tailored for ease and efficiency",
-        "bg":"./beachside.webp",
+        "bg":"./images/beachside.webp",
         "type": "carousel"
     },
     {

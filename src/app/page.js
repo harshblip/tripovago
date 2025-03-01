@@ -3,6 +3,7 @@ import { CarouselPlugin } from "./components/carousel";
 import Navbar from "./components/navbar";
 import { Lexend } from "next/font/google";
 import Howitworks from "./components/howitworks";
+import TouristPackages from "./components/touristPackages";
 
 const lexend = Lexend({
   weight: ['200', '300', '400', '500'],
@@ -12,7 +13,7 @@ const lexend = Lexend({
 export default function Home() {
   return (
     <>
-      <div className="items-center justify-items-center min-h-screen p-8 pb-20">
+      <div className="items-center justify-center min-h-screen p-8 pb-20">
         <Navbar />
         <CarouselPlugin />
 
@@ -37,7 +38,7 @@ export default function Home() {
           </div>
         </div>
         <Howitworks />
-
+        <TouristPackages />
       </div>
     </>
   );

@@ -3,14 +3,14 @@
         "id": 0,
         "title": "Real Estate Packages",
         "subtitle": "Showcasing properties, connecting buyers—unlock real estate deals with exclusive travel perks",
-        "bg":"./images/newyork.webp",
+        "bg": "./images/newyork.webp",
         "type": "carousel"
     },
     {
         "id": 1,
         "title": "Marine",
         "subtitle": "Smooth voyages start with us—exclusive travel solutions for seafarers, tailored for ease and efficiency",
-        "bg":"./images/ship.webp",
+        "bg": "./images/ship.webp",
         "type": "carousel"
     },
     {
@@ -19,31 +19,35 @@
         "title2": "Visa 📑",
         "title3": "Hotels 🏨",
         "subtitle": "Smooth voyages start with us—exclusive travel solutions for seafarers, tailored for ease and efficiency",
-        "bg":"./images/beachside.webp",
+        "bg": "./images/beachside.webp",
         "type": "carousel"
     },
     {
         "id": 3,
         "title": "Search your favourite places",
         "subtitle": "Embark on journey to discover your dream destination, where adventure meets joy",
+        "icon": "./icons/Search.png",
         "type": "howto"
     },
     {
         "id": 4,
         "title": "Browse different packages",
-        "subtitle": "Embark on journey to discover your dream destination, where adventure meets joy",
+        "subtitle": "Embark on journey to discover your dream destination,\n where adventure meets joy",
+        "icon": "./icons/earthglobe.png",
         "type": "howto"
     },
     {
         "id": 5,
         "title": "Explore package details",
-        "subtitle": "Embark on journey to discover your dream destination, where adventure meets joy",
+        "subtitle": "Embark on journey to discover your dream destination,\n where adventure meets joy",
+        "icon": "./icons/Compass.png",
         "type": "howto"
     },
     {
         "id": 6,
         "title": "Perfect travel package for seaman",
-        "subtitle": "Embark on journey to discover your dream destination, where adventure meets joy",
+        "subtitle": "Embark on journey to discover your dream destination, \nwhere adventure meets joy",
+        "icon": "./icons/shipmoving.png",
         "type": "howto"
     },
     {
@@ -52,22 +56,25 @@
         "subtitle": "Dubai / Saudi Arabia / Qatar",
         "rating": 4.6,
         "price": "20,000",
+        "bg": "./images/istanbul.jpg",
         "type": "tourist packages"
     },
     {
         "id": 8,
-        "title": "SouthEast Asia Package",
+        "title": "SE Asia Package",
         "subtitle": "Thailand / Vietnam / Bali / Singapore / Malaysia",
         "rating": 4.6,
         "price": "15,000",
+        "bg": "./images/bali.jpg",
         "type": "tourist packages"
     },
     {
         "id": 9,
-        "title": "India Tourist Package",
-        "subtitle": "Jammu&Kashmir / Rajasthan / Goa / Kerala",
+        "title": "India Package",
+        "subtitle": "Jammu&Kashmir / Rajasthan / Goa / Kerala / Gujarat",
         "rating": 4.6,
         "price": "12,000",
+        "bg": "./images/jammukashmir.jpg",
         "type": "tourist packages"
     },
     {
@@ -113,6 +120,15 @@
         "id": 16,
         "title1": "Emergency local",
         "title2": "Assistance",
-        "type": "marine"    
+        "type": "marine"
+    },
+    {
+        "id": 17,
+        "title": "Europe Package",
+        "subtitle": "Azerbaijan / Kazakhstan / Russia / Georgia / Turkey",
+        "rating": 4.2,
+        "price": "40,000",
+        "bg": "./images/europe.jpg",
+        "type": "tourist packages"
     }
 ]

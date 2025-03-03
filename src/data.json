@@ -100,26 +100,26 @@
     },
     {
         "id": 13,
-        "title1": "Exclusive Marine",
-        "title2": "&",
-        "title3": "Corporate fares",
+        "title": "Exclusive Marine\n            &\nCorporate fares",
+        "icon": "./icons/jahaaz.png",
         "type": "marine"
     },
     {
         "id": 14,
-        "title1": "24/7 Expert",
-        "title2": "Support",
+        "title": "24/7 Expert\n   Support",
+        "icon": "./icons/support.png",
         "type": "marine"
     },
     {
         "id": 15,
-        "title1": "Global Reach",
+        "title": "Global Reach",
+        "icon": "./icons/globu.png",
         "type": "marine"
     },
     {
         "id": 16,
-        "title1": "Emergency local",
-        "title2": "Assistance",
+        "title": "Emergency local\n    Assistance",
+        "icon": "./icons/siren.png",
         "type": "marine"
     },
     {

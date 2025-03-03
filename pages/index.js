@@ -14,7 +14,7 @@ const lexend = Lexend({
 export default function Home() {
     return (
         <>
-            <div className="items-center justify-center min-h-screen p-6">
+            <div className="items-center justify-center min-h-screen p-6 page">
                 <Navbar />
                 <CarouselPlugin />
                 <div className={`${lexend.className} w-full max-w-screen-xl mx-auto p-4 mt-44`}>

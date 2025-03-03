@@ -26,7 +26,7 @@ export default function Navbar() {
             <div className={`${kavoon.className} w-[100%] flex justify-around text-[#397346]`}>
                 <div className="flex space-x-2 -ml-32">
                     <p className=""> Trip </p>
-                    <img src='./icons/globe.png' className="w-6" />
+                    <img src='./icons/globe.png' className="w-7 h-7" />
                     <p> vita </p>
                 </div>
                 <div className={`${lexend.className} text-[#939393] text-sm flex space-x-16`}>

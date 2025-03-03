@@ -1,4 +1,7 @@
+"use client"
+
 import { Kavoon, Lexend } from "next/font/google"
+import { useRouter } from "next/router"
 
 const kavoon = Kavoon({
     weight: ['400'],
@@ -11,6 +14,13 @@ const lexend = Lexend({
 })
 
 export default function Navbar() {
+
+    const router = useRouter();
+
+    function navigate() {
+        router.push('/marine')
+    }
+
     return (
         <>
             <div className={`${kavoon.className} w-[100%] flex justify-around text-[#397346]`}>
@@ -20,16 +30,19 @@ export default function Navbar() {
                     <p> vita </p>
                 </div>
                 <div className={`${lexend.className} text-[#939393] text-sm flex space-x-16`}>
-                    <button className="hover:bg-slate-400 transition-all hover:text-white hover:p-2  hover:rounded-md">
+                    <button className="hover:bg-slate-400 transition-all hover:text-white p-2 rounded-md">
                         Home
                     </button>
-                    <button className="hover:bg-slate-400 transition-all hover:text-white hover:p-2  hover:rounded-md">
+                    <button className="hover:bg-slate-400 transition-all hover:text-white p-2 rounded-md">
                         Tour
                     </button>
-                    <button className="hover:bg-slate-400 transition-all hover:text-white hover:p-2  hover:rounded-md">
+                    <button
+                        className="hover:bg-slate-400 transition-all hover:text-white p-2 rounded-md"
+                        onClick={navigate}
+                    >
                         Marine
                     </button>
-                    <button className="hover:bg-slate-400 transition-all hover:text-white hover:p-2  hover:rounded-md">
+                    <button className="hover:bg-slate-400 transition-all hover:text-white p-2 rounded-md">
                         About
                     </button>
                 </div>

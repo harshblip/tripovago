@@ -2,7 +2,7 @@
 
 import * as React from "react"
 import Autoplay from "embla-carousel-autoplay"
-import data from '../../data.json'
+import data from '../src/data.json'
 import { Lexend } from "next/font/google"
 
 import { Card, CardContent } from "@/components/ui/card"

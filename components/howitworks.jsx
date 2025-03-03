@@ -1,5 +1,5 @@
 import { Lexend } from "next/font/google"
-import data from '../../data.json'
+import data from '../src/data.json'
 
 const lexend = Lexend({
     weight: ['200', '300', '500'],

@@ -1,0 +1,74 @@
+import { Kavoon, Lexend } from "next/font/google"
+
+const kavoon = Kavoon({
+    weight: ['400'],
+    subsets: ['latin']
+})
+
+const lexend = Lexend({
+    weight: ['200', '300', '500'],
+    subsets: ['latin']
+})
+
+export default function Footer() {
+    return (
+        <>
+            <div className="flex flex-col">
+                <div className={`bg-[#34818D] h-[16rem] mt-24 text-white rounded-lg flex justify-between ${lexend.className}`}>
+                    <div className="flex flex-col p-8">
+                        <div className={`${kavoon.className} flex space-x-2`}>
+                            <p className="text-3xl"> Trip </p>
+                            <img src='./icons/globe-white.png' className="w-8" />
+                            <p className="text-3xl"> vita </p>
+                        </div>
+                        <p className="font-normal text-sm mt-4"> Helping You Discover New Destinations and Create <br /> Unforgettable Memories </p>
+
+                        <p className="font-extralight text-sm mt-4">  tripovita@gmail.com  </p>
+                        <p className="text-sm font-extralight mt-1"> +91 8860922191 / +91 7982769510 </p>
+                    </div>
+                    <div className="flex space-x-24 p-8">
+                        <div className="flex flex-col text-sm space-y-4 items-start">
+                            <button>
+                                Home
+                            </button>
+                            <button>
+                                About
+                            </button>
+                            <button>
+                                Terms and Conditions
+                            </button>
+                            <button>
+                                Contact
+                            </button>
+                        </div>
+                        <div className="flex flex-col text-sm space-y-4 items-start">
+                            <button>
+                                Destinations
+                            </button>
+                            <button>
+                                Tour Packages
+                            </button>
+                            <button>
+                                Reviews
+                            </button>
+                            <button>
+                                Others
+                            </button>
+                        </div>
+                        <div className="flex flex-col">
+
+                        </div>
+                    </div>
+                </div>
+                <div className="flex justify-between">
+                    <p className="text-xs font-light ml-6 -mt-8 text-white"> Tripovita Inc Copyright 2024 </p>
+                    <div className="flex space-x-6 mr-16 -mt-12 absolute right-0">
+                        <img src="./icons/Gmail.png" className="w-6  " />
+                        <img src="./icons/Instagram.png" className="w-6 " />
+                        <img src="./icons/TwitterX.png" className="w-6  " />
+                    </div>
+                </div>
+            </div>
+        </>
+    )
+}

@@ -1,5 +1,5 @@
 import { Lexend } from "next/font/google"
-import data from '../../data.json'
+import data from '../src/data.json'
 
 const lexend = Lexend({
     weight: ['200', '300', '400', '500'],
@@ -23,7 +23,7 @@ export default function touristPackages() {
                                 data.map((x, i) => {
                                     return (
                                         x.type === "tourist packages" ? <div
-                                            className="bg-[#ffffff] h-[24rem] rounded-[1.5rem] shadow-lg flex flex-col bg-[length:180%] bg-no-repeat  bg-center hover:cursor-pointer hover:scale-105 transition-all"
+                                            className="bg-[#ffffff] h-[24rem] rounded-[1.5rem] shadow-lg flex flex-col hover:cursor-pointer hover:scale-105 transition-all"
                                             key={i}
                                             style={{ backgroundImage: `url(${x.bg})`, backgroundSize: "250%" }}
                                         >

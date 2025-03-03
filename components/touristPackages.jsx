@@ -17,13 +17,13 @@ export default function touristPackages() {
                     </div>
                 </div>
                 <div className="flex">
-                    <div className={`${lexend.className} w-full max-w-screen-xl mx-auto p-4 mt-4`}>
-                        <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
+                    <div className={`${lexend.className} w-full max-w-screen-xl mx-auto sm:p-4 mt-10 sm:mt-4`}>
+                        <div className="grid grid-cols-2 md:grid-cols-4 gap-16 sm:gap-6">
                             {
                                 data.map((x, i) => {
                                     return (
                                         x.type === "tourist packages" ? <div
-                                            className="bg-[#ffffff] h-[24rem] rounded-[1.5rem] shadow-lg flex flex-col hover:cursor-pointer hover:scale-105 transition-all"
+                                            className="bg-[#ffffff] h-[18rem] sm:h-[24rem] w-[12rem] sm:w-[16rem] rounded-[1.5rem] shadow-lg flex flex-col hover:cursor-pointer hover:scale-105 transition-all"
                                             key={i}
                                             style={{ backgroundImage: `url(${x.bg})`, backgroundSize: "250%" }}
                                         >

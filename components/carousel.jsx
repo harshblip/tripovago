@@ -26,7 +26,7 @@ export function CarouselPlugin() {
         <div className="mt-[2rem]">
             <Carousel
                 plugins={[plugin.current]}
-                className="max-w-[60rem] mt-[0rem] mr-4 sm:mr-0"
+                className="sm:w-[60rem] w-[24rem] mt-[0rem] mr-4 sm:mr-0"
                 onMouseEnter={plugin.current.stop}
                 onMouseLeave={plugin.current.reset}
             >
@@ -38,7 +38,7 @@ export function CarouselPlugin() {
                                     <div key={i}>
                                         <CarouselItem className={`${lexend.className}`}>
                                             <div className="flex items-center justify-center">
-                                                <Card className={`w-[60rem] h-[24rem] ${x.id === 2 ? `bg-no-repeat bg-[length:100%]` : ``} `} style={{ backgroundImage: `url(${x.bg})` }}>
+                                                <Card className={`sm:w-[60rem] w-[24rem] h-[24rem] sm:h-[24rem] ${x.id === 2 ? `bg-no-repeat bg-[length:100%]` : ``} `} style={{ backgroundImage: `url(${x.bg})` }}>
                                                     {
                                                         x.id === 2 ? <CardContent className="text-white flex flex-col h-full p-6">
                                                             <div>

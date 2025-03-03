@@ -24,12 +24,12 @@ export default function Navbar() {
     return (
         <>
             <div className={`${kavoon.className} w-[100%] flex justify-around text-[#397346]`}>
-                <div className="flex space-x-2 -ml-32">
+                <div className="flex space-x-2 sm:-ml-32">
                     <p className=""> Trip </p>
                     <img src='./icons/globe.png' className="w-7 h-7" />
                     <p> vita </p>
                 </div>
-                <div className={`${lexend.className} text-[#939393] text-sm flex space-x-16`}>
+                <div className={`${lexend.className} sm:visible hidden  text-[#939393] text-sm sm:flex sm:space-x-16`}>
                     <button className="hover:bg-slate-400 transition-all hover:text-white p-2 rounded-md">
                         Home
                     </button>
@@ -46,7 +46,7 @@ export default function Navbar() {
                         About
                     </button>
                 </div>
-                <div className="text-[#939393] text-sm -mr-32">
+                <div className="text-[#939393] text-sm sm:-mr-32">
                     <p> Bon Voyage! ⛵🌊  </p>
                 </div>
             </div>

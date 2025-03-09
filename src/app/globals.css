@@ -124,7 +124,13 @@
   }
 }
 
-
+.modal-bg {
+  background-image: url('/images/floral.webp');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  filter: brightness(1.18)
+}
 
 @layer base {
   * {

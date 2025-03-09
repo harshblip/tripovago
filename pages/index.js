@@ -5,6 +5,8 @@ import { Lexend } from "next/font/google";
 import Howitworks from "../components/howitworks";
 import TouristPackages from "../components/touristPackages";
 import Footer from "../components/footer";
+import Modal from "../components/modal";
+import { useState } from "react";
 
 const lexend = Lexend({
     weight: ['200', '300', '400', '500'],
@@ -12,6 +14,7 @@ const lexend = Lexend({
 })
 
 export default function Home() {
+    const [click, setClick] = useState(false);
     return (
         <>
             <div className="items-center justify-center min-h-screen p-6 page">
@@ -37,9 +40,15 @@ export default function Home() {
                         </div>
                     </div>
                 </div>
+                <button
+                    onClick={() => setClick(true)}
+                > openmodal </button>
                 <Howitworks />
                 <TouristPackages />
                 <Footer />
+                {
+                    !click ? <Modal /> : ''
+                }
             </div>
         </>
     );

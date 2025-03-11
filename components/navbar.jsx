@@ -23,7 +23,7 @@ export default function Navbar() {
 
     return (
         <>
-            <div className={`${kavoon.className} flex justify-between sm:justify-around text-[#397346]`}>
+            <div className={`${kavoon.className} flex justify-between sm:p-0 sm:mt-6  p-6 sm:justify-around text-[#397346]`}>
                 <div className="flex space-x-2 sm:-ml-32">
                     <p className=""> Trip </p>
                     <img src='./icons/globe.png' className="w-7 h-7" />

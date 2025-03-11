@@ -15,7 +15,7 @@ const lexend = Lexend({
 export default function Marine() {
     return (
         <>
-            <div className="p-6 page">
+            <div className="page">
                 <Navbar />
                 <div className="mt-4">
                     <img src='./images/marineships.webp' className="w-full h-[24rem] object-cover rounded-xl" />
@@ -37,7 +37,6 @@ export default function Marine() {
                         </div>
                     </div>
                 </div>
-                <button>openmodal</button>
                 <div className={`flex flex-col sm:flex-row ${lexend.className} mt-12`}>
                     <img src='./images/marine.webp' className="w-[40rem]" />
                     <div className="flex flex-col mt-10">

@@ -10,7 +10,7 @@ export default function touristPackages({ setClick }) {
     return (
         <>
             <button
-                className={`${lexend.className} sm:ml-0 ml-4 text-start mt-12`}
+                className={`${lexend.className} text-start mt-12`}
                 onClick={() => setClick(true)}
             >
                 <div className="flex">
@@ -30,7 +30,7 @@ export default function touristPackages({ setClick }) {
                                             key={i}
                                             style={{ backgroundImage: `url(${x.bg})`, backgroundSize: "250%" }}
                                         >
-                                            <div className="p-2 absolute rounded-md text-xs bg-[#e5e5e56b] text-white ml-[12rem] mt-4">
+                                            <div className="sm:p-2 absolute rounded-md text-xs bg-[#e5e5e56b] text-white sm:ml-[12rem] mt-4">
                                                 <p className="text-xs flex items-center "> <span> <img src="./icons/star.png" className="w-4 mr-1" /> </span> {x.rating} </p>
                                             </div>
                                             <div className="flex justify-center items-end h-full mb-4">

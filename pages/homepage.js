@@ -19,13 +19,11 @@ export default function Home() {
     const [click, setClick] = useState(false);
 
     return (
-        <>
-            {/* <div className="flex w-full justify-between">
-            <p>rrffr</p>
-            <p>fefef</p>
-        </div> */}
+        <div
+            onBlur={() => setClick(false)}
+        >
             <Navbar />
-            {/* <CarouselPlugin /> */}
+            <CarouselPlugin />
             <div className={`${lexend.className} w-full max-w-screen-xl mx-auto p-4 sm:mt-8`}>
                 <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
                     <div className="bg-[#ffffff] h-40 rounded-[1.5rem] shadow-lg flex justify-center items-center flex-col">
@@ -57,7 +55,13 @@ export default function Home() {
             />
             <Comments />
             <Footer />
-        </>
+            {click && (
+                <div className="fixed top-0 left-0 w-full h-full bg-black/50 flex items-center justify-center z-50"
+                >
+                    <Modal />
+                </div>
+            )}
+        </div>
     );
 }
 

@@ -23,7 +23,7 @@ export function CarouselPlugin() {
     )
 
     return (
-        <div className="mt-[2rem]">
+        <div className="flex justify-center mt-[2rem]">
             <Carousel
                 plugins={[plugin.current]}
                 className="sm:w-[60rem] w-[24rem] mt-[0rem] mr-4 sm:mr-0"

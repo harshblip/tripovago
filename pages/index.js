@@ -7,6 +7,8 @@ import TouristPackages from "../components/touristPackages";
 import Footer from "../components/footer";
 import Modal from "../components/modal";
 import { useState } from "react";
+import ExploreWorld from "../components/exploreWorld";
+import Comments from "../components/comments";
 
 const lexend = Lexend({
     weight: ['200', '300', '400', '500'],
@@ -15,12 +17,16 @@ const lexend = Lexend({
 
 export default function Home() {
     const [click, setClick] = useState(false);
+
     return (
         <>
-            <div className="items-center justify-center min-h-screen p-6 page">
+            <div
+                className="items-center justify-center min-h-screen p-6 page"
+                onBlur={() => setClick(false)}
+            >
                 <Navbar />
                 <CarouselPlugin />
-                <div className={`${lexend.className} w-full max-w-screen-xl mx-auto p-4 sm:mt-44`}>
+                <div className={`${lexend.className} w-full max-w-screen-xl mx-auto p-4 sm:mt-8`}>
                     <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
                         <div className="bg-[#ffffff] h-40 rounded-[1.5rem] shadow-lg flex justify-center items-center flex-col">
                             <p className="sm:text-4xl text-2xl font-medium text-[#737373]"> 200k+ </p>
@@ -40,16 +46,26 @@ export default function Home() {
                         </div>
                     </div>
                 </div>
-                <button
-                    onClick={() => setClick(true)}
-                > openmodal </button>
-                <Howitworks />
-                <TouristPackages />
+                <ExploreWorld 
+                    setClick={setClick}
+                />
+                <Howitworks
+                    setClick={setClick}
+                />
+                <TouristPackages
+                    setClick={setClick}
+                />
+                <Comments />
                 <Footer />
-                {
-                    !click ? <Modal /> : ''
-                }
             </div>
+
+            {click && (
+                <div className="fixed top-0 left-0 w-full h-full bg-black/50 flex items-center justify-center z-50"
+                >
+                    <Modal />
+                </div>
+            )}
         </>
     );
 }
+

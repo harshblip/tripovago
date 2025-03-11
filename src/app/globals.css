@@ -17,6 +17,45 @@
   animation: fadeIn 0.8s ease-in-out;
 }
 
+.modal {
+  animation: fadeIn 0.2s ease-in-out;
+}
+
+.one {
+  background-image: url('/images/bali.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.two {
+  background-image: url('/images/istanbul.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.three {
+  background-image: url('/images/burj-khalifa.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.four {
+  background-image: url('/images/jammukashmir.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.modal-bg {
+  background-image: url('/images/floral.webp');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  filter: brightness(1.18)
+}
 
 @layer base {
   :root {
@@ -124,13 +163,6 @@
   }
 }
 
-.modal-bg {
-  background-image: url('/images/floral.webp');
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  filter: brightness(1.18)
-}
 
 @layer base {
   * {

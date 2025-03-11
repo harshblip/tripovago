@@ -80,6 +80,7 @@
     {
         "id": 10,
         "name": "Amit Raghav",
+        "pfp": "./images/p4.webp",
         "comment": "I had such a great experience with this travel package! Everything was super organized, the hotels were really nice, and the whole trip felt so smooth. I’m already excited to plan my next vacation with them!",
         "tourPackage": "10 days China Tourism",
         "type": "reviews"
@@ -87,6 +88,7 @@
     {
         "id": 11,
         "name": "Abhijeet Sharma",
+        "pfp": "./images/p5.webp",
         "comment": "I had such a great experience with this travel package! Everything was super organized, the hotels were really nice, and the whole trip felt so smooth. I’m already excited to plan my next vacation with them!",
         "tourPackage": "12 days MiddleEast Tourism",
         "type": "reviews"
@@ -94,6 +96,7 @@
     {
         "id": 12,
         "name": "Abhishek Kumar",
+        "pfp": "./images/p6.webp",
         "comment": "I had such a great experience with this travel package! Everything was super organized, the hotels were really nice, and the whole trip felt so smooth. I’m already excited to plan my next vacation with them!",
         "tourPackage": "4 days India Tourism",
         "type": "reviews"

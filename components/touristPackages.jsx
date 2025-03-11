@@ -6,10 +6,13 @@ const lexend = Lexend({
     subsets: ['latin']
 })
 
-export default function touristPackages() {
+export default function touristPackages({ setClick }) {
     return (
         <>
-            <div className={`${lexend.className} mt-24`}>
+            <button
+                className={`${lexend.className} text-start mt-24`}
+                onClick={() => setClick(true)}
+            >
                 <div className="flex">
                     <div className="flex flex-col space-y-4 ml-20">
                         <p className="text-md text-[#BDBDBD]"> Tour packages </p>
@@ -18,7 +21,7 @@ export default function touristPackages() {
                 </div>
                 <div className="flex">
                     <div className={`${lexend.className} w-full max-w-screen-xl mx-auto sm:p-4 mt-10 sm:mt-4`}>
-                        <div className="grid grid-cols-2 md:grid-cols-4 gap-16 sm:gap-6">
+                        <div className="grid grid-cols-2 md:grid-cols-4 gap-16 sm:gap-10">
                             {
                                 data.map((x, i) => {
                                     return (
@@ -27,8 +30,8 @@ export default function touristPackages() {
                                             key={i}
                                             style={{ backgroundImage: `url(${x.bg})`, backgroundSize: "250%" }}
                                         >
-                                            <div className="p-2 absolute rounded-md text-xs bg-[#e5e5e56b] text-white ml-[13rem] mt-4">
-                                                <p className="text-xs flex items-center"> <span> <img src = "./icons/star.png" className="w-4 mr-1"/> </span> {x.rating} </p>
+                                            <div className="p-2 absolute rounded-md text-xs bg-[#e5e5e56b] text-white ml-[12rem] mt-4">
+                                                <p className="text-xs flex items-center "> <span> <img src="./icons/star.png" className="w-4 mr-1" /> </span> {x.rating} </p>
                                             </div>
                                             <div className="flex justify-center items-end h-full mb-4">
                                                 <div className="bg-[#e5e5e56b] w-[90%] h-24 rounded-xl flex backdrop-blur-sm">
@@ -49,7 +52,7 @@ export default function touristPackages() {
                         </div>
                     </div>
                 </div>
-            </div>
+            </button>
         </>
     )
 }

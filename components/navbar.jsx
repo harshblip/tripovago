@@ -23,7 +23,7 @@ export default function Navbar() {
 
     return (
         <>
-            <div className={`${kavoon.className} w-[100%] flex justify-around text-[#397346]`}>
+            <div className={`${kavoon.className} flex justify-between sm:justify-around text-[#397346]`}>
                 <div className="flex space-x-2 sm:-ml-32">
                     <p className=""> Trip </p>
                     <img src='./icons/globe.png' className="w-7 h-7" />
@@ -46,7 +46,7 @@ export default function Navbar() {
                         About
                     </button>
                 </div>
-                <div className="text-[#939393] text-sm sm:-mr-32">
+                <div className="text-[#2a9d8f] text-md font-normal -mr-0 sm:-mr-32">
                     <p> Bon Voyage! ⛵🌊  </p>
                 </div>
             </div>

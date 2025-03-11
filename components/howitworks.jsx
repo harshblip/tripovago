@@ -9,13 +9,13 @@ const lexend = Lexend({
 export default function Howitworks({ setClick }) {
     return (
         <>
-            <div className={`${lexend.className} flex sm:flex-row flex-col mt-[16rem]`}>
+            <div className={`${lexend.className} flex sm:flex-row flex-col mt-[4rem] sm:-ml-10`}>
                 <div className="sm:w-1/2">
                     <img src='./images/onadate.webp' className="rounded-xl w-[32rem] h-[28rem] sm:w-[44rem]" />
                 </div>
                 <div className="sm:mt-0 mt-12 sm:ml-0 ml-2 sm:w-1/2">
                     <div>
-                        <p className="text-xs text-[#BDBDBD]"> How it works </p>
+                        <p className="text-md text-[#BDBDBD]"> How it works </p>
                         <p className="text-4xl text-[#34818D] font-medium"> One click for you </p>
                     </div>
                     <div className="mt-6 space-y-1">

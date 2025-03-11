@@ -8,6 +8,12 @@ const lexend = Lexend({
 export default function ExploreWorld({ setClick }) {
     return (
         <>
+            <div className={`${lexend.className} flex mt-12`}>
+                <div className="flex flex-col space-y-1 ml-12">
+                    <p className="text-md text-[#BDBDBD]"> Best location </p>
+                    <p className="text-4xl text-[#34818D] font-medium"> Explore World </p>
+                </div>
+            </div>
             <div className={`${lexend.className} flex flex-col md:flex-row gap-6 p-4 md:p-10`}>
                 <div
                     className="h-[16rem] w-full md:w-3/5 p-6 rounded-xl one hover:cursor-pointer hover:scale-[1.02] transition-all"

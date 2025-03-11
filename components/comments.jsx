@@ -25,7 +25,7 @@ export default function Comments() {
     return (
         <div className="mt-[2rem]">
             <div className={`${lexend.className} flex`}>
-                <div className="flex flex-col space-y-4 ml-12">
+                <div className="flex flex-col space-y-1 ml-12">
                     <p className="text-md text-[#BDBDBD]"> look what our customers say </p>
                     <p className="text-4xl text-[#34818D] font-medium"> Customer reviews ! </p>
                 </div>
@@ -41,16 +41,16 @@ export default function Comments() {
                                 x.type === "reviews" ?
                                     <div key={i}>
                                         <CarouselItem className={`${lexend.className}`}>
-                                            <div className="flex items-center justify-center">
+                                            <div className="flex  items-center justify-center">
                                                 <Card className={`sm:w-[60rem] w-[24rem] h-[24rem] sm:h-[14rem] shadow-lg`}>
-                                                    <CardContent className="text-gray flex items-center h-full p-6">
-                                                        <div className="flex items-center">
+                                                    <CardContent className="text-gray flex flex-col sm:flex-row items-center h-full p-6">
+                                                        <div className="flex items-center sm:-ml-0 -ml-20">
                                                             <img src={x.pfp} className="w-14 h-14 rounded-full" />
                                                             <div className="flex flex-col ml-6">
                                                                 <h2 className="mb-1 font-medium text-md"> {x.name} </h2>
                                                             </div>
                                                         </div>
-                                                        <div className="ml-[6rem] mr-[2rem] text-[#A0A0A0] font-medium flex flex-col">
+                                                        <div className="ml-8 sm:mt-0 mt-6 sm:ml-[6rem] mr-[2rem] text-[#A0A0A0] font-medium flex flex-col">
                                                             <p className="text-sm"> {x.comment}  </p>
                                                             <p className="font-light text-[0.6rem] mt-6"> {x.tourPackage}  </p>
                                                         </div>

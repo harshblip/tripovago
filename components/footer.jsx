@@ -14,7 +14,7 @@ export default function Footer() {
     return (
         <>
             <div className="flex flex-col">
-                <div className={`bg-[#34818D] w-[26rem] sm:w-full h-[16rem] mt-24 text-white rounded-lg flex justify-between ${lexend.className}`}>
+                <div className={`bg-[#34818D] w-[24rem] sm:w-full h-[16rem] mt-24 text-white rounded-lg flex justify-between ${lexend.className}`}>
                     <div className="flex flex-col p-8">
                         <div className={`${kavoon.className} flex space-x-2`}>
                             <p className="text-lg sm:text-3xl"> Trip </p>
@@ -27,7 +27,7 @@ export default function Footer() {
                         <p className="text-[0.6rem] sm:text-sm font-extralight mt-1"> +91 8860922191 / +91 7982769510 </p>
                     </div>
                     <div className="flex space-x-4 sm:space-x-24 p-8">
-                        <div className="flex flex-col text-[0.8rem] sm:text-sm space-y-4 items-start">
+                        <div className="sm:flex hidden flex-col text-[0.8rem] sm:text-sm space-y-4 items-start">
                             <button>
                                 Home
                             </button>
@@ -41,7 +41,7 @@ export default function Footer() {
                                 Contact
                             </button>
                         </div>
-                        <div className="flex flex-col text-[0.8rem] sm:text-sm space-y-4 items-start">
+                        <div className="sm:flex hidden flex-col text-[0.8rem] sm:text-sm space-y-4 items-start">
                             <button>
                                 Destinations
                             </button>
@@ -62,7 +62,7 @@ export default function Footer() {
                 </div>
                 <div className="flex justify-between">
                     <p className="text-xs font-light sm:flex ml-4 sm:ml-6 -mt-8 text-white"> Tripovita Inc Copyright 2024 </p>
-                    <div className="flex space-x-6 mr-16 -mt-12 absolute right-0">
+                    <div className="flex space-x-6 sm:mr-16 mr-6 -mt-12 absolute right-0">
                         <img src="./icons/Gmail.png" className="w-6  " />
                         <img src="./icons/Instagram.png" className="w-6 " />
                         <img src="./icons/TwitterX.png" className="w-6  " />

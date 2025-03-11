@@ -10,18 +10,18 @@ export default function touristPackages({ setClick }) {
     return (
         <>
             <button
-                className={`${lexend.className} text-start mt-24`}
+                className={`${lexend.className} sm:ml-0 ml-4 text-start mt-12`}
                 onClick={() => setClick(true)}
             >
                 <div className="flex">
-                    <div className="flex flex-col space-y-4 ml-20">
+                    <div className="flex flex-col space-y-4 sm:ml-12">
                         <p className="text-md text-[#BDBDBD]"> Tour packages </p>
                         <p className="text-4xl text-[#34818D] font-medium"> Our Tourist Packages </p>
                     </div>
                 </div>
                 <div className="flex">
-                    <div className={`${lexend.className} w-full max-w-screen-xl mx-auto sm:p-4 mt-10 sm:mt-4`}>
-                        <div className="grid grid-cols-2 md:grid-cols-4 gap-16 sm:gap-10">
+                    <div className={`${lexend.className} sm:p-4 mt-10 sm:mt-4`}>
+                        <div className="grid grid-cols-2 sm:grid-cols-4 gap-8 sm:gap-10">
                             {
                                 data.map((x, i) => {
                                     return (

@@ -102,6 +102,22 @@
         "type": "reviews"
     },
     {
+        "id": 18,
+        "name": "Mridul Kumar",
+        "pfp": "./images/p5.webp",
+        "comment": "I had such a great experience with this travel package! Everything was super organized, the hotels were really nice, and the whole trip felt so smooth. I’m already excited to plan my next vacation with them!",
+        "tourPackage": "4 days India Tourism",
+        "type": "reviews"
+    },
+    {
+        "id": 19,
+        "name": "Amar Sharma",
+        "pfp": "./images/p6.webp",
+        "comment": "I had such a great experience with this travel package! Everything was super organized, the hotels were really nice, and the whole trip felt so smooth. I’m already excited to plan my next vacation with them!",
+        "tourPackage": "4 days India Tourism",
+        "type": "reviews"
+    },
+    {
         "id": 13,
         "title": "Exclusive Marine\n            &\nCorporate fares",
         "icon": "./icons/jahaaz.png",

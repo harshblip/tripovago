@@ -16,10 +16,15 @@ const lexend = Lexend({
 export default function Navbar() {
 
     const router = useRouter();
+    const currentPath = router.pathname;
 
     function navigate() {
         router.push('/marine')
     }
+
+    const scrollToSection = (id) => {
+        document.getElementById(id)?.scrollIntoView({ behavior: "smooth" });
+    };
 
     return (
         <>
@@ -30,19 +35,28 @@ export default function Navbar() {
                     <p> vita </p>
                 </div>
                 <div className={`${lexend.className} sm:visible hidden  text-[#939393] text-sm sm:flex sm:space-x-16`}>
-                    <button className="hover:bg-slate-400 transition-all hover:text-white p-2 rounded-md">
-                        Home
+                    <button
+                        className="hover:bg-slate-400 transition-all hover:text-white p-2 rounded-md"
+                        onClick={() => currentPath === '/' || currentPath === '/homepage' ? scrollToSection("reviews") : router.push('/homepage')}
+                    >
+                        {currentPath === '/' || currentPath === '/homepage' ? 'Reviews' : 'Home'}
                     </button>
-                    <button className="hover:bg-slate-400 transition-all hover:text-white p-2 rounded-md">
+                    <button
+                        className="hover:bg-slate-400 transition-all hover:text-white p-2 rounded-md"
+                        onClick={() => scrollToSection("tour")}
+                    >
                         Tour
                     </button>
                     <button
                         className="hover:bg-slate-400 transition-all hover:text-white p-2 rounded-md"
-                        onClick={navigate}
+                        onClick={() => currentPath === '/marine' ? scrollToSection("whyus") : router.push('/marine')}
                     >
-                        Marine
+                        {currentPath === '/marine' ? 'Why Us?' : 'Marine'}
                     </button>
-                    <button className="hover:bg-slate-400 transition-all hover:text-white p-2 rounded-md">
+                    <button
+                        className="hover:bg-slate-400 transition-all hover:text-white p-2 rounded-md"
+                        onClick={() => scrollToSection("about")}
+                    >
                         About
                     </button>
                 </div>

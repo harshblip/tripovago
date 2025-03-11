@@ -20,6 +20,7 @@ export default function Home() {
 
     return (
         <div
+            className="scroll-smooth"
             onBlur={() => setClick(false)}
         >
             <Navbar />

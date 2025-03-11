@@ -23,7 +23,10 @@ export default function Comments() {
     )
 
     return (
-        <div className="mt-[2rem]">
+        <div
+            className="mt-[2rem]"
+            id="reviews"
+        >
             <div className={`${lexend.className} flex`}>
                 <div className="flex flex-col space-y-1 ml-12">
                     <p className="text-md text-[#BDBDBD]"> look what our customers say </p>

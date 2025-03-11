@@ -13,6 +13,15 @@ const lexend = Lexend({
 })
 
 export default function Marine() {
+    const phoneNumber = "+91-7982769510";
+    const whatsappNumber = "8860922191"
+    const whatsappMessage = "Hi, I loved your website. Can I know more?"
+
+    const openWhatsApp = () => {
+        const encodedMessage = encodeURIComponent(whatsappMessage);
+        window.open(`https://wa.me/${whatsappNumber}?text=${encodedMessage}`, "_blank");
+    };
+
     return (
         <>
             <div className="page">
@@ -47,7 +56,10 @@ export default function Marine() {
                         <p className="text-sm leading-8 mt-6 text-[#2C7681]">We  <span className="text-2xl"> specialize </span>  in seamless travel management,  offering exclusive access to global <span className="text-2xl">seaman</span> fares and  ensuring <span className="text-2xl">smooth</span> , hassle-free journeys for seafarers worldwide. </p>
                     </div>
                 </div>
-                <div className={`${lexend.className} mt-12 flex flex-col`}>
+                <div
+                    className={`${lexend.className} mt-12 flex flex-col`}
+                    id="whyus"
+                >
                     <p className="font-medium text-4xl ml-8 text-[#0FA4C2]"> Why choose us ? </p>
                     <div className="flex sm:flex-row flex-col space-y-10 sm:ml-0  sm:space-x-20 justify-center mt-8 w-full max-w-screen-xl mx-auto">
                         <div className="grid grid-cols-2 md:grid-cols-4 gap-10">
@@ -73,13 +85,13 @@ export default function Marine() {
                         <div className="flex space-x-4">
                             <img src='./images/Phone.png' className="w-6 sm:h-6 h-5" />
                             <div className="flex sm:flex-row flex-col space-x-4">
-                                <p className="sm:text-md text-sm font-normal text-[#327C88]"> +91 8860922191 </p>
-                                <p className="sm:text-md text-sm font-normal text-[#327C88]"> +91 7982769510 </p>
+                                <a onClick={openWhatsApp} className="sm:text-md text-sm font-normal text-[#327C88]"> +91-8860922191 </a>
+                                <a href={`tel:${phoneNumber}`} className="sm:text-md text-sm font-normal text-[#327C88]"> +91 7982769510 </a>
                             </div>
                         </div>
                         <div className="flex space-x-4 mt-4 ml-1">
                             <img src='./images/Gmail.png' className="w-6" />
-                            <p className="text-md font-normal text-[#327C88]"> tripovita@gmail.com </p>
+                            <a href="mailto:example@email.com" className="text-md font-normal text-[#327C88]"> tripovita@gmail.com </a>
                         </div>
                     </div>
                 </div>

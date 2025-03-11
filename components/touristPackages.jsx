@@ -14,7 +14,10 @@ export default function touristPackages({ setClick }) {
                 onClick={() => setClick(true)}
             >
                 <div className="flex">
-                    <div className="flex flex-col space-y-4 sm:ml-12">
+                    <div
+                        className="flex flex-col space-y-4 sm:ml-12"
+                        id="tour"
+                    >
                         <p className="text-md text-[#BDBDBD]"> Tour packages </p>
                         <p className="text-4xl text-[#34818D] font-medium"> Our Tourist Packages </p>
                     </div>

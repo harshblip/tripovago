@@ -13,7 +13,10 @@ const lexend = Lexend({
 export default function Footer() {
     return (
         <>
-            <div className="flex flex-col">
+            <div
+                className="flex flex-col"
+                id="about"
+            >
                 <div className={`bg-[#34818D] w-[24rem] sm:w-full h-[16rem] mt-24 text-white rounded-lg flex justify-between ${lexend.className}`}>
                     <div className="flex flex-col p-8">
                         <div className={`${kavoon.className} flex space-x-2`}>

@@ -35,7 +35,7 @@ export default function Comments() {
             </div>
             <Carousel
                 plugins={[plugin.current]}
-                className="sm:w-[68rem] w-[24rem] mt-[2rem] mr-4 sm:mr-0"
+                className="sm:w-[64rem] w-[24rem] mt-[2rem] mr-4 ml-0 sm:ml-20 sm:mr-0"
             >
                 <CarouselContent>
                     {
@@ -45,7 +45,7 @@ export default function Comments() {
                                     <div key={i}>
                                         <CarouselItem className={`${lexend.className}`}>
                                             <div className="flex  items-center justify-center">
-                                                <Card className={`sm:w-[60rem] w-[24rem] h-[24rem] sm:h-[14rem] shadow-lg`}>
+                                                <Card className={`sm:w-[60rem] w-[24rem] h-[24rem] sm:h-[18rem] shadow-lg`}>
                                                     <CardContent className="text-gray flex flex-col sm:flex-row items-center h-full p-6">
                                                         <div className="flex items-center sm:-ml-0 -ml-20">
                                                             <img src={x.pfp} className="w-14 h-14 rounded-full" />

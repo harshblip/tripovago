@@ -46,6 +46,12 @@ export default function Navbar() {
                     </button>
                     <button
                         className="hover:bg-slate-400 transition-all hover:text-white p-2 rounded-md"
+                        onClick={() => currentPath === '/marine' ? scrollToSection("whyus") : router.push('/marine')}
+                    >
+                        {currentPath === '/marine' ? 'Why Us?' : 'Marine'}
+                    </button>
+                    <button
+                        className="hover:bg-slate-400 transition-all hover:text-white p-2 rounded-md"
                         onClick={() => currentPath === '/' || currentPath === '/homepage' ? scrollToSection("reviews") : router.push('/homepage')}
                     >
                         {currentPath === '/' || currentPath === '/homepage' ? 'Reviews' : 'Home'}
@@ -58,15 +64,9 @@ export default function Navbar() {
                     </button>
                     <button
                         className="hover:bg-slate-400 transition-all hover:text-white p-2 rounded-md"
-                        onClick={() => currentPath === '/marine' ? scrollToSection("whyus") : router.push('/marine')}
-                    >
-                        {currentPath === '/marine' ? 'Why Us?' : 'Marine'}
-                    </button>
-                    <button
-                        className="hover:bg-slate-400 transition-all hover:text-white p-2 rounded-md"
                         onClick={() => scrollToSection("about")}
                     >
-                        About
+                        Contact Us
                     </button>
                 </div>
                 <div className="text-[#2a9d8f] text-md font-normal -mr-0 sm:-mr-32">

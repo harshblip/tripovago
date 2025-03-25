@@ -149,5 +149,23 @@
         "price": "40,000",
         "bg": "./images/europe.jpg",
         "type": "tourist packages"
+    },
+    {
+        "id": 18,
+        "title": "India Package",
+        "subtitle": "Jammu&Kashmir / Rajasthan / Goa / Kerala / Gujarat",
+        "rating": 4.6,
+        "price": "12,000",
+        "bg": "./images/jammukashmir.jpg",
+        "type": "tourist packages"
+    },
+    {
+        "id": 19,
+        "title": "India Package",
+        "subtitle": "Jammu&Kashmir / Rajasthan / Goa / Kerala / Gujarat",
+        "rating": 4.6,
+        "price": "12,000",
+        "bg": "./images/jammukashmir.jpg",
+        "type": "tourist packages"
     }
 ]

@@ -6,6 +6,7 @@ import useEmblaCarousel from "embla-carousel-react"
 import { useCallback } from "react"
 import data from '../src/data.json'
 import { Lexend } from "next/font/google"
+import { Card, CardContent } from "@/components/ui/card"
 
 const lexend = Lexend({
     weight: ['200', '300', '500'],

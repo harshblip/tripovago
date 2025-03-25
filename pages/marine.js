@@ -27,8 +27,8 @@ export default function Marine() {
             <div className="page">
                 <Navbar />
                 <div className="mt-4">
-                    <img src='./images/marineships.webp' className="w-full h-[24rem] object-cover rounded-xl" />
-                    <p className={`text-[#0FA4C2] ${kavoon.className} -mt-52 sm:-mt-48 sm:ml-36 text-4xl`}> Marine </p>
+                    <img src='./images/marineships.webp' className="w-[24rem] p-2 sm:p-0 sm:w-[100rem] sm:ml-[2rem] h-[24rem] object-cover rounded-xl" />
+                    <p className={`text-[#0FA4C2] ${kavoon.className} -mt-52 sm:-mt-48 sm:ml-52 text-3xl ml-8 sm:text-4xl`}> Marine </p>
                 </div>
                 <div className={`${lexend.className} w-full max-w-screen-xl mx-auto p-4 mt-44`}>
                     <div className="grid grid-cols-2 md:grid-cols-4 gap-10 sm:ml-[15rem]">
@@ -46,7 +46,7 @@ export default function Marine() {
                         </div>
                     </div>
                 </div>
-                <div className={`flex flex-col sm:flex-row ${lexend.className} mt-12`}>
+                <div className={`flex flex-col sm:flex-row ${lexend.className} mt-12 sm:p-0 p-6`}>
                     <img src='./images/marine.webp' className="w-[40rem]" />
                     <div className="flex flex-col mt-10">
                         <p className="text-3xl font-medium text-[#0FA4C2]">Marine travel solutions

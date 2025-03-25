@@ -9,7 +9,7 @@ export default function ExploreWorld({ setClick }) {
     return (
         <>
             <div className={`${lexend.className} flex mt-12`}>
-                <div className="flex flex-col space-y-1 ml-12">
+                <div className="flex flex-col space-y-1 ml-4 sm:ml-12">
                     <p className="text-md text-[#BDBDBD]"> Best location </p>
                     <p className="text-4xl text-[#34818D] font-medium"> Explore World </p>
                 </div>

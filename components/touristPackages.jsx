@@ -18,8 +18,8 @@ export default function touristPackages({ setClick }) {
                         className="flex flex-col space-y-4 sm:ml-12"
                         id="tour"
                     >
-                        <p className="text-md text-[#BDBDBD]"> Tour packages </p>
-                        <p className="text-4xl text-[#34818D] font-medium"> Our Tourist Packages </p>
+                        <p className="sm:ml-0 ml-4 text-md text-[#BDBDBD]"> Tour packages </p>
+                        <p className="sm:ml-0 ml-4 text-4xl text-[#34818D] font-medium"> Our Tourist Packages </p>
                     </div>
                 </div>
                 <div className="flex justify-center ml-8">

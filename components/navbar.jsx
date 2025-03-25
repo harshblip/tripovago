@@ -19,7 +19,7 @@ export default function Navbar() {
     const currentPath = router.pathname;
 
     function navigate() {
-        router.push('/marine')
+        router.push('/homepage')
     }
 
     const scrollToSection = (id) => {
@@ -29,12 +29,21 @@ export default function Navbar() {
     return (
         <>
             <div className={`${kavoon.className} flex justify-between sm:p-0 sm:mt-6  p-6 sm:justify-around text-[#397346]`}>
-                <div className="flex space-x-2 sm:-ml-32">
+                <div
+                    className="flex space-x-2 sm:-ml-32 hover:cursor-pointer"
+                    onClick={navigate}
+                >
                     <p className=""> Trip </p>
                     <img src='./icons/globe.png' className="w-7 h-7" />
                     <p> vita </p>
                 </div>
                 <div className={`${lexend.className} sm:visible hidden  text-[#939393] text-sm sm:flex sm:space-x-16`}>
+                    <button
+                        className="hover:bg-slate-400 transition-all hover:text-white p-2 rounded-md"
+                        onClick={navigate}
+                    >
+                        Home
+                    </button>
                     <button
                         className="hover:bg-slate-400 transition-all hover:text-white p-2 rounded-md"
                         onClick={() => currentPath === '/' || currentPath === '/homepage' ? scrollToSection("reviews") : router.push('/homepage')}
@@ -61,7 +70,7 @@ export default function Navbar() {
                     </button>
                 </div>
                 <div className="text-[#2a9d8f] text-md font-normal -mr-0 sm:-mr-32">
-                    <p> Bon Voyage! ⛵🌊  </p>
+                    <p> Welcome! ⛵🌊  </p>
                 </div>
             </div>
         </>

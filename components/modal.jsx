@@ -12,7 +12,7 @@ const lexend = Lexend({
 
 export default function Modal() {
     const phone = "+91-8860922191";
-    const whatsappNumber = "8860922191"
+    const whatsappNumber = "+918860922191"
     const whatsappMessage = "Hi, I loved your website. Can I know more?"
 
     const openWhatsApp = () => {

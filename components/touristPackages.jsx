@@ -24,7 +24,7 @@ export default function touristPackages({ setClick }) {
                 </div>
                 <div className="flex justify-center ml-8">
                     <div className={`${lexend.className} sm:p-4 mt-10 sm:mt-4 w-full`}>
-                        <div className="flex flex-wrap justify-between gap-6 sm:gap-20">
+                        <div className="flex flex-wrap gap-6 sm:gap-16">
                             {data.map((x, i) => (
                                 x.type === "tourist packages" ? (
                                     <div

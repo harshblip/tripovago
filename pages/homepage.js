@@ -21,7 +21,7 @@ export default function Home() {
     return (
         <div
             className="scroll-smooth"
-            onBlur={() => setClick(false)}
+        // onBlur={() => setClick(false)}
         >
             <Navbar />
             <CarouselPlugin />
@@ -59,7 +59,9 @@ export default function Home() {
             {click && (
                 <div className="fixed top-0 left-0 w-full h-full bg-black/50 flex items-center justify-center z-50"
                 >
-                    <Modal />
+                    <Modal
+                        setClick={setClick}
+                    />
                 </div>
             )}
         </div>
